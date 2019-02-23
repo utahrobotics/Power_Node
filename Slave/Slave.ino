@@ -1,5 +1,13 @@
 #include <TinyWireS.h>
 
+// --------------------------------------
+// Slave
+//    
+// This sketch is for the ATTINY on-board a USR 2018-2019 Power Node. Upon request from a master device the ATTINY will take readings from the voltage divider
+// and ASC758 current sensor and send a total of four bytes (two for each integer reading) to the master device.
+//
+// By: Alex Charters
+// Last Updated: 2/23/2019 
 
 #define I2C_SLAVE_ADDRESS 0x5 // Address of the slave
  
